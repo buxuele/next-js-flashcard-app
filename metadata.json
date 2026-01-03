@@ -1,0 +1,5 @@
+{
+  "name": "Echoes of Wisdom",
+  "description": "An interactive quote-guessing app where users reveal hidden wisdom through fill-in-the-blank style challenges.",
+  "requestFramePermissions": []
+}

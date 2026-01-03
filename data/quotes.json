@@ -1,0 +1,345 @@
+[
+  {
+    "id": 1,
+    "question": "A man is great not because he hasn't failed;",
+    "answer": "a man is great because failure hasn't stopped him.",
+    "author": null,
+    "category": "perseverance"
+  },
+  {
+    "id": 2,
+    "question": "Be so disciplined",
+    "answer": "it looks like madness.",
+    "author": null,
+    "category": "discipline"
+  },
+  {
+    "id": 3,
+    "question": "Time is the only currency you spend without knowing the balance.",
+    "answer": "Use it wisely.",
+    "author": "Nicholas John",
+    "category": "time"
+  },
+  {
+    "id": 4,
+    "question": "Big dreams require",
+    "answer": "big sacrifices.",
+    "author": null,
+    "category": "dreams"
+  },
+  {
+    "id": 5,
+    "question": "The rarest of all human qualities is",
+    "answer": "consistency.",
+    "author": "Jeremy Bentham",
+    "category": "consistency"
+  },
+  {
+    "id": 6,
+    "question": "Life is 10% what happens to you and",
+    "answer": "90% how you react to it.",
+    "author": "Charles R. Swindoll",
+    "category": "mindset"
+  },
+  {
+    "id": 7,
+    "question": "If you fail, congratulations.",
+    "answer": "Most people don't even try.",
+    "author": null,
+    "category": "perseverance"
+  },
+  {
+    "id": 8,
+    "question": "You're not stuck. You're just too scared to move.",
+    "answer": "Do it anyway.",
+    "author": null,
+    "category": "action"
+  },
+  {
+    "id": 9,
+    "question": "If you don't separate from your distractions,",
+    "answer": "your distractions will separate you from your goals.",
+    "author": null,
+    "category": "focus"
+  },
+  {
+    "id": 10,
+    "question": "Knowledge isn't power",
+    "answer": "until it's applied.",
+    "author": "Dale Carnegie",
+    "category": "action"
+  },
+  {
+    "id": 11,
+    "question": "Comfort kills more dreams",
+    "answer": "than failure ever will.",
+    "author": null,
+    "category": "growth"
+  },
+  {
+    "id": 12,
+    "question": "Learn the rules like a pro,",
+    "answer": "so you can break them like an artist.",
+    "author": "Pablo Picasso",
+    "category": "creativity"
+  },
+  {
+    "id": 13,
+    "question": "Clarity doesn't come before action.",
+    "answer": "It comes from action.",
+    "author": "Rumi",
+    "category": "action"
+  },
+  {
+    "id": 14,
+    "question": "Not every closed door is locked.",
+    "answer": "Push.",
+    "author": null,
+    "category": "perseverance"
+  },
+  {
+    "id": 15,
+    "question": "Weak people envy.",
+    "answer": "Strong people study.",
+    "author": null,
+    "category": "mindset"
+  },
+  {
+    "id": 16,
+    "question": "Definition of discipline:",
+    "answer": "Do it motivated. Do it unmotivated.",
+    "author": null,
+    "category": "discipline"
+  },
+  {
+    "id": 17,
+    "question": "Discipline can fix",
+    "answer": "80% of your problems.",
+    "author": null,
+    "category": "discipline"
+  },
+  {
+    "id": 18,
+    "question": "When you face your fears, they shrink",
+    "answer": "and you grow.",
+    "author": "Jay Bennett",
+    "category": "growth"
+  },
+  {
+    "id": 19,
+    "question": "Don't fall in love with success.",
+    "answer": "Fall in love with the habits that bring success.",
+    "author": null,
+    "category": "habits"
+  },
+  {
+    "id": 20,
+    "question": "Positivity is",
+    "answer": "a superpower.",
+    "author": null,
+    "category": "mindset"
+  },
+  {
+    "id": 21,
+    "question": "Confidence comes from",
+    "answer": "being prepared.",
+    "author": "John Wooden",
+    "category": "confidence"
+  },
+  {
+    "id": 22,
+    "question": "Your future is shaped by the habits you repeat,",
+    "answer": "not the goals you set.",
+    "author": null,
+    "category": "habits"
+  },
+  {
+    "id": 23,
+    "question": "Stop thinking about it—",
+    "answer": "do it.",
+    "author": null,
+    "category": "action"
+  },
+  {
+    "id": 24,
+    "question": "Everyone has ideas.",
+    "answer": "Few have the discipline to turn them into reality.",
+    "author": null,
+    "category": "discipline"
+  },
+  {
+    "id": 25,
+    "question": "A lot goes wrong",
+    "answer": "before everything goes right.",
+    "author": null,
+    "category": "perseverance"
+  },
+  {
+    "id": 26,
+    "question": "You will be free once you realize",
+    "answer": "the cage was made of thoughts.",
+    "author": null,
+    "category": "mindset"
+  },
+  {
+    "id": 27,
+    "question": "Your life changes when",
+    "answer": "your habits change.",
+    "author": null,
+    "category": "habits"
+  },
+  {
+    "id": 28,
+    "question": "Surround yourself with people who have bigger goals than you.",
+    "answer": "Ambition is contagious.",
+    "author": "Mike Leber",
+    "category": "growth"
+  },
+  {
+    "id": 29,
+    "question": "Winners focus on effort.",
+    "answer": "Losers wait for motivation.",
+    "author": null,
+    "category": "discipline"
+  },
+  {
+    "id": 30,
+    "question": "If the WHY is powerful,",
+    "answer": "the HOW is easy.",
+    "author": "Jim Rohn",
+    "category": "purpose"
+  },
+  {
+    "id": 31,
+    "question": "Stay busy,",
+    "answer": "so you don't have time to be sad.",
+    "author": null,
+    "category": "action"
+  },
+  {
+    "id": 32,
+    "question": "Keep every stone they throw at you.",
+    "answer": "You got castles to build.",
+    "author": null,
+    "category": "perseverance"
+  },
+  {
+    "id": 33,
+    "question": "You don't need a perfect plan—",
+    "answer": "you just need a first step.",
+    "author": null,
+    "category": "action"
+  },
+  {
+    "id": 34,
+    "question": "Those who keep learning",
+    "answer": "will keep rising in life.",
+    "author": "Charlie Munger",
+    "category": "growth"
+  },
+  {
+    "id": 35,
+    "question": "The measure of intelligence is",
+    "answer": "the ability to change.",
+    "author": "Albert Einstein",
+    "category": "growth"
+  },
+  {
+    "id": 36,
+    "question": "Winners don't wait for motivation;",
+    "answer": "they create it.",
+    "author": null,
+    "category": "discipline"
+  },
+  {
+    "id": 37,
+    "question": "If you're not consistent,",
+    "answer": "you're not serious.",
+    "author": null,
+    "category": "consistency"
+  },
+  {
+    "id": 38,
+    "question": "The future belongs to those who believe in",
+    "answer": "the beauty of their dreams.",
+    "author": "Eleanor Roosevelt",
+    "category": "dreams"
+  },
+  {
+    "id": 39,
+    "question": "Consistency is what transforms average",
+    "answer": "into excellence.",
+    "author": "Tony Robbins",
+    "category": "consistency"
+  },
+  {
+    "id": 40,
+    "question": "A bad system will beat",
+    "answer": "a good person every time.",
+    "author": "W. Edwards Deming",
+    "category": "systems"
+  },
+  {
+    "id": 41,
+    "question": "Don't spend major time",
+    "answer": "on minor things.",
+    "author": "Jim Rohn",
+    "category": "focus"
+  },
+  {
+    "id": 42,
+    "question": "Being ready is a myth.",
+    "answer": "You start. You suck. You try again. You get better.",
+    "author": null,
+    "category": "action"
+  },
+  {
+    "id": 43,
+    "question": "Ugly action beats",
+    "answer": "unfinished perfection.",
+    "author": null,
+    "category": "action"
+  },
+  {
+    "id": 44,
+    "question": "If you wait until you feel better to start living,",
+    "answer": "you might be waiting forever.",
+    "author": null,
+    "category": "action"
+  },
+  {
+    "id": 45,
+    "question": "You can't let your failures define you.",
+    "answer": "You have to let your failures teach you.",
+    "author": null,
+    "category": "perseverance"
+  },
+  {
+    "id": 46,
+    "question": "Don't be jealous of people,",
+    "answer": "be inspired.",
+    "author": null,
+    "category": "mindset"
+  },
+  {
+    "id": 47,
+    "question": "You'll never feel ready.",
+    "answer": "Do it anyway.",
+    "author": null,
+    "category": "action"
+  },
+  {
+    "id": 48,
+    "question": "You must be willing to go to war with yourself",
+    "answer": "and create a new identity.",
+    "author": "David Goggins",
+    "category": "growth"
+  },
+  {
+    "id": 49,
+    "question": "Hard times",
+    "answer": "build character.",
+    "author": null,
+    "category": "perseverance"
+  }
+]
