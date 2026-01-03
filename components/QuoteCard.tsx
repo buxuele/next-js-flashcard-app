@@ -88,10 +88,10 @@ export const QuoteCard = memo(function QuoteCard({
                 e.stopPropagation();
                 onMastered(quote.id);
               }}
-              className="px-3 py-1 text-xs font-medium text-green-400 bg-green-900/30 rounded-lg hover:bg-green-900/50 transition"
-              aria-label="已学会，删除此卡片"
+              className="px-3 py-1 text-xs font-medium text-red-400 bg-red-900/30 rounded-lg hover:bg-red-900/50 transition"
+              aria-label="删除此卡片"
             >
-              ✓ 已学会
+              删除
             </button>
           )}
         </div>

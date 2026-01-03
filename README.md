@@ -1,21 +1,37 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Echoes of Wisdom - 智慧回响
 
-# Run and deploy your AI Studio app
+一个基于 Next.js 的闪卡学习应用，支持问答卡片浏览、AI 生成问答内容。
 
-This contains everything you need to run your app locally.
+## 功能特性
 
-View your app in AI Studio: https://ai.studio/apps/drive/1qFgr7W4Rpmp8GPJl8rJNWgVmx3U8HuIn
+- 📚 内置诗词和名言数据集
+- 🤖 支持上传文本，使用 Gemini AI 自动生成问答卡片
+- 🎯 两种浏览模式：信息流模式 / 专注模式
+- ⌨️ 键盘快捷键支持（← → 切换卡片）
+- 💾 学习进度本地存储
+- 🗑️ 支持删除已掌握的卡片
 
-## Run Locally
+## 本地运行
 
-**Prerequisites:**  Node.js
+**前置条件:** Node.js
 
+1. 安装依赖：
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
-# next-js-flashcard-app
+   ```bash
+   npm install
+   ```
+
+2. 在 `.env.local` 中设置 `GEMINI_API_KEY` 为你的 Gemini API 密钥
+
+3. 启动开发服务器：
+   ```bash
+   npm run dev
+   ```
+
+## 技术栈
+
+- Next.js 14
+- React 18
+- TypeScript
+- Tailwind CSS
+- Google Generative AI (Gemini)
