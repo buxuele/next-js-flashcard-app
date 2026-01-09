@@ -11,32 +11,26 @@ export enum ViewMode {
   FOCUS = "FOCUS",
 }
 
-export enum DataSet {
-  QUOTES = "quotes",
-  POEMS = "poems",
-  CUSTOM = "custom",
-}
-
 export interface DataSetInfo {
-  id: DataSet;
+  id: string;
   name: string;
-  description: string;
+  fileName: string;
+  data: Quote[];
 }
 
 export interface AppState {
   revealedIds: Set<number>;
   viewMode: ViewMode;
   currentIndex: number;
-  dataSet: DataSet;
+  dataSetId: string;
 }
 
 export type AppAction =
   | { type: "REVEAL"; id: number }
   | { type: "SET_VIEW_MODE"; mode: ViewMode }
   | { type: "SET_INDEX"; index: number }
-  | { type: "SET_DATASET"; dataSet: DataSet }
-  | { type: "SET_CUSTOM_DATA"; data: Quote[] }
+  | { type: "SET_DATASET"; dataSetId: string }
   | { type: "NEXT" }
   | { type: "PREV" }
   | { type: "RESET" }
-  | { type: "LOAD_PROGRESS"; ids: number[]; dataSet?: DataSet };
+  | { type: "LOAD_PROGRESS"; ids: number[]; dataSetId?: string };

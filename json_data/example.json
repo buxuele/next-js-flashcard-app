@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "question": "示例问题 1",
+    "answer": "示例答案 1",
+    "author": "作者名",
+    "category": "示例分类"
+  },
+  {
+    "id": 2,
+    "question": "示例问题 2",
+    "answer": "示例答案 2",
+    "author": null,
+    "category": "示例分类"
+  }
+]

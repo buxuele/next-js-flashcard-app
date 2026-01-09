@@ -9,6 +9,7 @@ interface QuoteCardProps {
   onReveal: (id: number) => void;
   onMastered?: (id: number) => void;
   isFocusMode?: boolean;
+  onShowEncouragement?: () => void;
 }
 
 export const QuoteCard = memo(function QuoteCard({
@@ -17,6 +18,7 @@ export const QuoteCard = memo(function QuoteCard({
   onReveal,
   onMastered,
   isFocusMode,
+  onShowEncouragement,
 }: QuoteCardProps) {
   if (!quote) {
     return (
@@ -33,6 +35,10 @@ export const QuoteCard = memo(function QuoteCard({
   const handleReveal = () => {
     if (!isRevealed) {
       onReveal(quote.id);
+      // 触发鼓励动画
+      if (onShowEncouragement) {
+        onShowEncouragement();
+      }
     }
   };
 

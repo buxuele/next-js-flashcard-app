@@ -1,17 +1,13 @@
 "use client";
 
 import { memo } from "react";
-import { ViewMode, DataSet } from "@/types";
-import { DataSetSelector } from "./DataSetSelector";
+import { ViewMode } from "@/types";
 
 interface HeaderProps {
   viewMode: ViewMode;
   setViewMode: (mode: ViewMode) => void;
   progress: number;
   onReset: () => void;
-  currentDataSet: DataSet;
-  onDataSetChange: (dataSet: DataSet) => void;
-  onUploadClick: () => void;
 }
 
 export const Header = memo(function Header({
@@ -19,9 +15,6 @@ export const Header = memo(function Header({
   setViewMode,
   progress,
   onReset,
-  currentDataSet,
-  onDataSetChange,
-  onUploadClick,
 }: HeaderProps) {
   return (
     <header className="sticky top-0 z-50 bg-slate-800/80 backdrop-blur-xl border-b border-slate-700">
@@ -40,18 +33,6 @@ export const Header = memo(function Header({
         </button>
 
         <div className="flex items-center space-x-2 sm:space-x-4">
-          <DataSetSelector
-            currentDataSet={currentDataSet}
-            onSelect={onDataSetChange}
-          />
-
-          <button
-            onClick={onUploadClick}
-            className="px-3 py-1.5 text-xs font-semibold rounded-lg bg-indigo-600 text-white hover:bg-indigo-500 transition"
-          >
-            + 生成
-          </button>
-
           <nav className="flex bg-slate-700 p-1 rounded-xl" role="tablist">
             <button
               role="tab"
