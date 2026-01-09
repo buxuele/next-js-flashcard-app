@@ -51,54 +51,80 @@ export const EncouragementToast = memo(function EncouragementToast({
         ];
       setMessage(randomMessage);
       setIsShowing(true);
-      setIsVisible(true);
 
-      // 1.7秒后开始淡出
+      // 立即显示（无延迟）
+      setTimeout(() => setIsVisible(true), 10);
+
+      // 2秒后开始淡出
       const hideTimer = setTimeout(() => {
         setIsVisible(false);
-      }, 1700);
+      }, 2000);
 
-      // 2秒后完全隐藏
+      // 2.5秒后完全移除
       const removeTimer = setTimeout(() => {
         setIsShowing(false);
         onComplete();
-      }, 2000);
+      }, 2500);
 
       return () => {
         clearTimeout(hideTimer);
         clearTimeout(removeTimer);
       };
     }
-  }, [trigger, onComplete]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [trigger]);
 
   if (!isShowing) return null;
 
   return (
     <div
-      className={`fixed top-20 right-4 z-50 transition-all duration-500 ${
-        isVisible
-          ? "opacity-100 translate-y-0 scale-100"
-          : "opacity-0 -translate-y-4 scale-95"
+      className={`fixed top-20 right-4 z-50 transition-all duration-500 ease-in-out ${
+        isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full"
       }`}
     >
-      <div className="relative">
-        {/* 主卡片 - 移除抖动动画 */}
-        <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-2xl shadow-2xl p-4 min-w-[200px]">
-          <div className="bg-white/95 backdrop-blur rounded-xl px-6 py-3 text-center">
-            <p className="text-lg font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-              {message}
-            </p>
+      {/* Bootstrap 风格的 Toast - 深色主题 */}
+      <div className="bg-slate-800 rounded-lg shadow-2xl border border-slate-700 overflow-hidden min-w-[280px] max-w-[350px]">
+        {/* 顶部彩色条 */}
+        <div className="h-1 bg-gradient-to-r from-green-400 via-blue-500 to-purple-600"></div>
+
+        {/* 内容区 */}
+        <div className="p-4 flex items-start gap-3">
+          {/* 图标 */}
+          <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-green-400 to-blue-500 flex items-center justify-center text-white text-xl">
+            ✓
           </div>
-        </div>
 
-        {/* 装饰性光晕 */}
-        <div className="absolute inset-0 bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 rounded-2xl blur-xl opacity-50 -z-10"></div>
+          {/* 文字内容 */}
+          <div className="flex-1 pt-1">
+            <p className="text-white font-medium text-base">{message}</p>
+          </div>
 
-        {/* 星星装饰 */}
-        <div className="absolute -top-2 -right-2 text-2xl animate-spin-slow">
-          ✨
+          {/* 关闭按钮 */}
+          <button
+            onClick={() => {
+              setIsVisible(false);
+              setTimeout(() => {
+                setIsShowing(false);
+                onComplete();
+              }, 500);
+            }}
+            className="flex-shrink-0 text-slate-400 hover:text-white transition-colors"
+          >
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
         </div>
-        <div className="absolute -bottom-2 -left-2 text-2xl">🎉</div>
       </div>
     </div>
   );

@@ -15,6 +15,7 @@ export interface DataSetInfo {
   id: string;
   name: string;
   fileName: string;
+  category: string;
   data: Quote[];
 }
 
